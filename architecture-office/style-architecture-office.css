@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  background-color: brown;
+  padding: 12px;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+}
+
+nav a:hover {
+  background-color: black;
+  color: yellow;
+}
+
+header {
+  background-image: url("../assets/architecture-office/dibujo-tecnico-header.jpeg");
+  height: 300px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: grey;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .footer-header {
+  width: 100%;
+  font-weight: bold;
+  border-bottom: 2px solid white;
+  padding: 10px 0;
+}
+
+footer .bottom-box {
+  margin-top: 10px;
+  font-size: 0.9em;
+  width: 33%;
+  padding: 10px;
+}
+
+.title {
+  color: black;
+  text-align: center;
+  text-shadow: 3px 3px 5px grey;
+  font-size: 3em;
+}
+
+.subtitle {
+  color: black;
+  text-align: center;
+  text-shadow: 3px 3px 5px grey;
+}
+
+.section-title {
+  color: brown;
+  text-align: center;
+}
+
+.us-section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.works-section {
+  background-color: antiquewhite;
+  padding: 20px;
+}
+
+.bordered-box {
+  display: flex;
+}
+
+.text-box {
+  width: 50%;
+  text-align: left;
+}
+
+.image-box {
+  width: 50%;
+}
+
+.icon-image {
+  width: 64px;
+  height: 64px;
+}
+
+.boxed-image {
+  width: 80%;
+}
+
+.works-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.work {
+  padding: 20px;
+  width: 30%;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.work .bordered-image {
+  width: 90%;
+}

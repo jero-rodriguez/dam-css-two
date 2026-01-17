@@ -1,0 +1,57 @@
+/* Estilos básicos para el tutorial */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 20px;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+p {
+  max-width: 700px;
+}
+
+ul,
+ol {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Pequeño contenedor para que las páginas no parezcan vacías */
+.container {
+  max-width: 800px;
+  background: white;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+/* Separador suave para bloques */
+hr {
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+}
