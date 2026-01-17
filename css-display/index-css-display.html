@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #header {
+            background-color: lightblue;
+            text-align: center;
+            padding: 30px;
+            position: sticky;
+            top: 0px;
+            border-bottom: 10px solid gray;
+        }
+
+        #menu {
+            background-color: lightgray;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #menu ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #menu ul li {
+            display: inline-block;
+            text-align: center;
+            padding: 20px;
+            width: 33%;
+            box-sizing: border-box;
+            background-color: gray;
+        }
+
+        #link {
+            display: block;
+            margin-top: 20px;
+            background-color: wheat;
+        }
+
+        #image-link {
+            display: inline-block;
+        }
+
+        #occult-image {
+            display: block;
+            visibility: hidden;
+        }
+
+        #hidden-image {
+            display: none;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0px;
+        }
+    </style>
+    <title>Propiedad Display: inline, block, none y inline-block</title>
+</head>
+
+<body>
+
+</body>
+<div id="header">
+    <h1>Distribuciones Perez SL</h1>
+</div>
+<div id="menu">
+    <ul>
+        <li>¿Quiénes somos?</li>
+        <li>¿Qué hacemos?</li>
+        <li>¿Dónde estamos?</li>
+    </ul>
+</div>
+<h2>Quienes Somos</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dolores ut et. Totam quae saepe deleniti commodi
+    dolore, consectetur voluptatem? <a id="link" href="/">Visite nuestra pagina</a> nostrum impedit suscipit illum ullam
+    iure
+    nihil rem. Reprehenderit esse
+    consectetur sequi aliquid sed, fugiat vitae quos facere nemo ratione officia dolorum culpa dolores suscipit? Sed
+    dolore dicta magnam vitae tempore a in deserunt maiores cupiditate quos beatae, dolores unde, eius est molestias
+    cumque porro fugiat? Repellendus optio, <img id="image-link"
+        src="https://res.cloudinary.com/demo/image/upload/sample.jpg" alt="Un texto">culpa doloremque dolorum harum
+    debitis commodi soluta consequatur autem
+    officia, non itaque. Amet laborum ducimus facilis sint eum, quod illum cupiditate nemo non iusto quo temporibus
+    excepturi eveniet dolorum alias dignissimos.</p>
+
+<h2>Quienes Somos</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dolores ut et. Totam quae saepe deleniti commodi
+    dolore, consectetur voluptatem? <a id="link" href="/">Visite nuestra pagina</a> nostrum impedit suscipit illum ullam
+    iure
+    nihil rem. Reprehenderit esse
+    consectetur sequi aliquid sed, fugiat vitae quos facere nemo ratione officia dolorum culpa dolores suscipit? Sed
+    dolore dicta magnam vitae tempore a in deserunt maiores cupiditate quos beatae, dolores unde, eius est molestias
+    cumque porro fugiat? Repellendus optio, AQUI HAY UNA IMAGEN OCULTA <img id="occult-image"
+        src="https://res.cloudinary.com/demo/image/upload/sample.jpg" alt="Un texto">culpa doloremque dolorum harum
+    debitis commodi soluta consequatur autem
+    officia, non itaque. Amet laborum ducimus facilis sint eum, quod illum cupiditate nemo non iusto quo temporibus
+    excepturi eveniet dolorum alias dignissimos.</p>
+
+<h2>Quienes Somos</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dolores ut et. Totam quae saepe deleniti commodi
+    dolore, consectetur voluptatem? <a id="link" href="/">Visite nuestra pagina</a> nostrum impedit suscipit illum ullam
+    iure
+    nihil rem. Reprehenderit esse
+    consectetur sequi aliquid sed, fugiat vitae quos facere nemo ratione officia dolorum culpa dolores suscipit? Sed
+    dolore dicta magnam vitae tempore a in deserunt maiores cupiditate quos beatae, dolores unde, eius est molestias
+    cumque porro fugiat? Repellendus optio, AQUI HAY UNA IMAGEN NO VISIBLE <img id="hidden-image"
+        src="https://res.cloudinary.com/demo/image/upload/sample.jpg" alt="Un texto">culpa doloremque dolorum harum
+    debitis commodi soluta consequatur autem
+    officia, non itaque. Amet laborum ducimus facilis sint eum, quod illum cupiditate nemo non iusto quo temporibus
+    excepturi eveniet dolorum alias dignissimos.</p>
+
+<a href="../index.html">Volver al índice</a>
+
+</html>

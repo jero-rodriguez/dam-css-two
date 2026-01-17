@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        section {
+            background-color: lightblue;
+            border: 2px solid blue;
+            height: 100px;
+        }
+
+        article {
+            border: 2px solid green;
+            background-color: red;
+            padding: 15px;
+        }
+
+        .flex-container {
+            display: flex;
+        }
+
+        .flex-start-container {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .flex-end-container {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .flex-center-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .flex-space-around-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .flex-space-between-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .align-flex-start-container {
+            display: flex;
+            align-items: flex-start;
+            height: 200px;
+        }
+
+        .align-flex-center-container {
+            display: flex;
+            align-items: center;
+            height: 200px;
+        }
+
+        .align-flex-stretch-container {
+            display: flex;
+            align-items: stretch;
+            height: 200px;
+        }
+
+        .article-flex-end {
+            align-self: flex-end
+        }
+
+        .article-flex-center {
+            align-self: center
+        }
+
+        .article-flex-start {
+            align-self: flex-start
+        }
+
+        .section-flex-wrap-center {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            align-items: baseline;
+            height: 250px;
+            width: 250px;
+        }
+
+        .section-flex-wrap-space-around {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-around;
+            height: 250px;
+            width: 250px;
+            justify-content: center;
+        }
+
+        .section-flex-wrap-start {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            height: 250px;
+            width: 250px;
+            justify-content: center;
+        }
+    </style>
+    <title>Introducción a Flexbox</title>
+</head>
+
+<body>
+    <h2>Alineación Horizontal de los objetos</h2>
+    <p>Esto es un contenedor normal y corriente.</p>
+    <section>
+        <article id="art11">
+            Articulo 1.1
+        </article>
+        <article id="art12">
+            Articulo 1.2
+        </article>
+        <article id="art13">
+            Articulo 1.3
+        </article>
+    </section>
+
+    <p>Este es un ejemplo de contenedor con display: flex</p>
+    <section class="flex-container">
+        <article id="art11">
+            Articulo 1.1
+        </article>
+        <article id="art12">
+            Articulo 1.2
+        </article>
+        <article id="art13">
+            Articulo 1.3
+        </article>
+    </section>
+
+    <p>Este es un ejemplo de contenedor con justify-content: flex-start</p>
+    <section class="flex-start-container">
+        <article id="art11">
+            Articulo 1.1
+        </article>
+        <article id="art12">
+            Articulo 1.2
+        </article>
+        <article id="art13">
+            Articulo 1.3
+        </article>
+    </section>
+
+    <p>Este es un ejemplo de contenedor con justify-content: flex-end</p>
+    <section class="flex-end-container">
+        <article id="art11">
+            Articulo 1.1
+        </article>
+        <article id="art12">
+            Articulo 1.2
+        </article>
+        <article id="art13">
+            Articulo 1.3
+        </article>
+    </section>
+
+    <p>Este es un ejemplo de contenedor con justify-content: center</p>
+    <section class="flex-center-container">
+        <article id="art11">
+            Articulo 1.1
+        </article>
+        <article id="art12">
+            Articulo 1.2
+        </article>
+        <article id="art13">
+            Articulo 1.3
+        </article>
+    </section>
+
+    <p>Este es un ejemplo de contenedor con justify-content: space-around</p>
+    <section class="flex-space-around-container">
+        <article id="art11">
+            Articulo 1.1
+        </article>
+        <article id="art12">
+            Articulo 1.2
+        </article>
+        <article id="art13">
+            Articulo 1.3
+        </article>
+    </section>
+
+    <p>Este es un ejemplo de contenedor con justify-content: space-between</p>
+    <section class="flex-space-between-container">
+        <article id="art11">
+            Articulo 1.1
+        </article>
+        <article id="art12">
+            Articulo 1.2
+        </article>
+        <article id="art13">
+            Articulo 1.3
+        </article>
+    </section>
+
+    <p>Este es un ejemplo de contenedor con align-items: flex-start</p>
+    <section class="align-flex-start-container">
+        <article id="art11">
+            Articulo 1.1
+        </article>
+        <article id="art12">
+            Articulo 1.2
+        </article>
+        <article id="art13">
+            Articulo 1.3
+        </article>
+    </section>
+
+    <p>Este es un ejemplo de contenedor con align-items: center</p>
+    <section class="align-flex-center-container">
+        <article id="art11">
+            Articulo 1.1
+        </article>
+        <article id="art12">
+            Articulo 1.2
+        </article>
+        <article id="art13">
+            Articulo 1.3
+        </article>
+    </section>
+
+    <p>Este es un ejemplo de contenedor con align-items: stretch</p>
+    <section class="align-flex-stretch-container">
+        <article id="art11">
+            Articulo 1.1
+        </article>
+        <article id="art12">
+            Articulo 1.2
+        </article>
+        <article id="art13">
+            Articulo 1.3
+        </article>
+    </section>
+
+    <h2>Alineación Individual de un objeto</h2>
+    <p>Este es un ejemplo de contenedor con align-itself: flex-end</p>
+    <section class="flex-container">
+        <article id="art11" class="article-flex-end">
+            Articulo 1.1
+        </article>
+        <article id="art12" class="article-flex-center">
+            Articulo 1.2
+        </article>
+        <article id="art13" class="article-flex-start">
+            Articulo 1.3
+        </article>
+    </section>
+
+    <h2>Flex Wrap</h2>
+    <p>Propiedad flex-wrap: por defecto el valor es nowrap
+        (todo en la misma línea. si el valor es wrap: se crean las filas necesarias para mantener el ancho indicado)</p>
+
+    <p>flex-wrap:wrap; align-content:center</p>
+    <section class="section-flex-wrap-center">
+        <article id="art11">
+            Articulo 1.1
+        </article>
+        <article id="art12">
+            Articulo 1.2
+        </article>
+        <article id="art13">
+            Articulo 1.3
+        </article>
+    </section>
+
+    <p>flex-wrap: wrap;align-content : space-around</p>
+    <section class="section-flex-wrap-space-around">
+        <article id="art11">
+            Articulo 1.1
+        </article>
+        <article id="art12">
+            Articulo 1.2
+        </article>
+        <article id="art13">
+            Articulo 1.3
+        </article>
+    </section>
+
+    <p>flex-wrap:wrap; align-content:flex-start</p>
+    <section class="section-flex-wrap-start">
+        <article id="art11">
+            Articulo 1.1
+        </article>
+        <article id="art12">
+            Articulo 1.2
+        </article>
+        <article id="art13">
+            Articulo 1.3
+        </article>
+    </section>
+
+    <footer>
+        <a href="../index.html">Volver al índice</a>
+    </footer>
+
+</body>
+
+</html>

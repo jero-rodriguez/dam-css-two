@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+nav {
+  background-color: MidnightBlue;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: yellow;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+header {
+  background-image: url("../assets/bosco-business/business.jpg");
+  background-size: cover;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  text-align: center;
+  padding: 20px;
+}
+
+footer {
+  background-color: grey;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo {
+  color: purple;
+  font-size: 0.9em;
+}
+
+.titular {
+  text-align: center;
+}
+
+.picture {
+  border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
